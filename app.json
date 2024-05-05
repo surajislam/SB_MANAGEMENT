@@ -52,11 +52,6 @@
        "required": true,
        "value": "mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority"
     },
-    "DATABASE_URL": {
-        "description": "enter postgesql url,,  https://www.elephantsql.com",
-        "required": true,
-        "value": "postgres://iarfggbc:Vxzh_kG7cxa1kHR5faxcd1kuA4R-UT9E@rosie.db.elephantsql.com/iarfggbc"
-     },
     "CASH_API_KEY": {
         "description": " Get your API key from https://www.alphavantage.co/support/#api-key",
         "required": false,
