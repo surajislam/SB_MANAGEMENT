@@ -141,7 +141,5 @@ __help__ = """
 ⬤ /arctan ➥ ɪɴᴠᴇʀsᴇ ᴛᴀɴɢᴇɴᴛ /arctan 0
 ⬤ /abs ➥ ᴀʙsᴏʟᴜᴛᴇ ᴠᴀʟᴜᴇ /abs -1
 ⬤ /log ➥ ʟᴏɢᴀʀɪᴛʜᴍ /log 2l8
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ɴ ʏ ᴋ ᴀ ᴀ ♡゙ ᴍ ᴜ s ɪ ᴄ](https://t.me/the_friendz)
 """
   
