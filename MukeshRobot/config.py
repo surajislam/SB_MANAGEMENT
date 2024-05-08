@@ -16,6 +16,8 @@ class Config(object):
   
     OWNER_ID = getenv("OWNER_ID", "6195725562") 
 
+    SUDO_USER = getenv("SUDO_USER", "6195725562") 
+
     OWNER_USERNAME = ("OWNER_USERNAME", "loco_x_Pilot")
     
     SUPPORT_CHAT = getenv("SUPPORT_CHAT", "the_friendz")
