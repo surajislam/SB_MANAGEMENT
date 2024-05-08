@@ -20,7 +20,7 @@ async def _whisper(_, inline_query):
                 title="💌 ᴡʜɪsᴘᴇʀ",
                 description=f"@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]",
                 input_message_content=InputTextMessageContent(f"💌 ᴜsᴀɢᴇ ➥ \n\n@{BOT_USERNAME} [ USERNAME | ID ] [ TEXT ]"),
-                thumb_url="https://graph.org/file/826485f2d7db6f09db8ed.jpg",
+                thumb_url="https://graph.org/file/182bc6c2f3693d8a3fd0c.jpg",
                 reply_markup=switch_btn
             )
         ]
@@ -38,8 +38,8 @@ async def _whisper(_, inline_query):
                 InlineQueryResultArticle(
                     title="💌 ᴡʜɪsᴘᴇʀ",
                     description="๏ ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ !",
-                    input_message_content=InputTextMessageContent("● ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ!"),
-                    thumb_url="https://graph.org/file/826485f2d7db6f09db8ed.jpg",
+                    input_message_content=InputTextMessageContent("๏ ɪɴᴠᴀʟɪᴅ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ!"),
+                    thumb_url="https://graph.org/file/182bc6c2f3693d8a3fd0c.jpg",
                     reply_markup=switch_btn
                 )
             ]
@@ -50,9 +50,9 @@ async def _whisper(_, inline_query):
             mm = [
                 InlineQueryResultArticle(
                     title="💌 ᴡʜɪsᴘᴇʀ",
-                    description=f"❖ sᴇɴᴅ ᴀ ᴡʜɪsᴘᴇʀ ᴛᴏ ➥ {user.first_name}",
+                    description=f"✦ sᴇɴᴅ ᴀ ᴡʜɪsᴘᴇʀ ᴛᴏ ➥ {user.first_name}",
                     input_message_content=InputTextMessageContent(f"💌 ᴀ ᴡʜɪsᴘᴇʀ ᴍᴇssᴀɢᴇ ᴛᴏ ➥ {user.first_name} ᴏɴʟʏ ʜᴇ/sʜᴇ ᴄᴀɴ ᴏᴘᴇɴ ɪᴛ.\n\n❅ ᴛʏᴘᴇ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ/sᴇɴᴛᴇɴᴄᴇ."),
-                    thumb_url="https://graph.org/file/826485f2d7db6f09db8ed.jpg",
+                    thumb_url="https://graph.org/file/182bc6c2f3693d8a3fd0c.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
@@ -84,18 +84,18 @@ async def whispes_cb(_, query):
     
     if user_id not in [from_user, to_user, 6922271843]:
         try:
-            await _.send_message(from_user, f"❖ {query.from_user.mention} ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴏᴘᴇɴ ʏᴏᴜʀ ᴡʜɪsᴘᴇʀ.")
+            await _.send_message(from_user, f"✦ {query.from_user.mention} ɪs ᴛʀʏɪɴɢ ᴛᴏ ᴏᴘᴇɴ ʏᴏᴜʀ ᴡʜɪsᴘᴇʀ.")
         except Unauthorized:
             pass
         
-        return await query.answer("❖ ᴛʜɪs ᴡʜɪsᴘᴇʀ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ 🚧", show_alert=True)
+        return await query.answer("✦ ᴛʜɪs ᴡʜɪsᴘᴇʀ ɪs ɴᴏᴛ ғᴏʀ ʏᴏᴜ 🚧", show_alert=True)
     
     search_msg = f"{from_user}_{to_user}"
     
     try:
         msg = whisper_db[search_msg]
     except:
-        msg = "🚫 ᴇʀʀᴏʀ!\n\n❖ ᴡʜɪsᴘᴇʀ ʜᴀs ʙᴇᴇɴ ᴅᴇʟᴇᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ !"
+        msg = "🚫 ᴇʀʀᴏʀ!\n\n๏ ᴡʜɪsᴘᴇʀ ʜᴀs ʙᴇᴇɴ ᴅᴇʟᴇᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ ᴅᴀᴛᴀʙᴀsᴇ !"
     
     SWITCH = InlineKeyboardMarkup([[InlineKeyboardButton("ɢᴏ ɪɴʟɪɴᴇ", switch_inline_query_current_chat="")]])
     
@@ -103,16 +103,16 @@ async def whispes_cb(_, query):
     
     if len(data) > 3 and data[3] == "one":
         if user_id == to_user:
-            await query.edit_message_text("❖ ᴡʜɪsᴘᴇʀ ʜᴀs ʙᴇᴇɴ ʀᴇᴀᴅ !\n\n❖ ᴘʀᴇss ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ sᴇɴᴅ ᴀ ᴡʜɪsᴘᴇʀ !", reply_markup=SWITCH)
+            await query.edit_message_text("๏ ᴡʜɪsᴘᴇʀ ʜᴀs ʙᴇᴇɴ ʀᴇᴀᴅ !\n\n๏ ᴘʀᴇss ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ sᴇɴᴅ ᴀ ᴡʜɪsᴘᴇʀ!", reply_markup=SWITCH)
 
 
 async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="💌 ᴡʜɪsᴘᴇʀ",
-            description=f"@NykaaXBot [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"⬤ ᴜsᴀɢᴇ ➥ @NykaaXBot (ᴛᴀʀɢᴇᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ) (ʏᴏᴜʀ ᴍᴇssᴀɢᴇ).\n\n● ᴇxᴀᴍᴘʟᴇ ➥ @NykaaXBot @username ɪ ᴡᴀɴɴᴀ ᴋɪss ʏᴏᴜ."),
-            thumb_url="https://graph.org/file/826485f2d7db6f09db8ed.jpg",
+            description=f"@AvishaXbot [USERNAME | ID] [TEXT]",
+            input_message_content=InputTextMessageContent(f"**๏ ᴜsᴀɢᴇ ➠**\n\n@AvishaXbot (ᴛᴀʀɢᴇᴛ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ) (ʏᴏᴜʀ ᴍᴇssᴀɢᴇ).\n\n**๏ ᴇxᴀᴍᴘʟᴇ ➠**\n@AvishaxBot @username ɪ ᴡᴀɴɴᴀ ғᴜᴄᴋ ʏᴏᴜ"),
+            thumb_url="https://telegra.ph/file/21c69049c4855ac0a035b.jpg",
             reply_markup=switch_btn
         )
     ]
@@ -132,10 +132,9 @@ async def bot_inline(_, inline_query):
 
 
 __help__ = """
+✿ *ᴡʜɪsᴘᴇʀ ɪɴʟɪɴᴇ ғᴜɴᴄᴛɪᴏɴ ғᴏʀ sᴇᴄʀᴇᴛ ᴄʜᴀᴛs* ✿
 
-⬤ @NykaaXBot [@username] || [id] ʏᴏᴜʀ ᴍᴇssᴀɢᴇ.
-
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ [๛ɴ ʏ ᴋ ᴀ ᴀ ♡゙ ᴍ ᴜ s ɪ ᴄ](https://t.me/the_friendz)
+❍ @AvishaxBot [@username] || [id] ʏᴏᴜʀ ᴍᴇssᴀɢᴇ
 """
 
 __mod_name__ = "ᴡʜɪsᴘᴇʀ"
