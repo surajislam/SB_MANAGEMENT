@@ -16,7 +16,6 @@ class Config(object):
   
     OWNER_ID = getenv("OWNER_ID", "6195725562") 
 
-    SUDO_USER = getenv("SUDO_USER", "6195725562") 
 
     OWNER_USERNAME = ("OWNER_USERNAME", "loco_x_Pilot")
     
@@ -36,7 +35,7 @@ class Config(object):
    
     BOT_USERNAME = getenv("BOT_USERNAME" , "avishaBot")
    
-    DATABASE_URL = getenv("DATABASE_URL", "postgres://bnastfeg:SSeKbnIRV5dkO_2ewW10Y0EOuvRVgo1f@kesavan.db.elephantsql.com/bnastfeg")
+    DATABASE_URL = getenv("DATABASE_URL", None)
 
     CASH_API_KEY = getenv("CASH_API_KEY", "V48U2FLLKRHSVD4X")
     
