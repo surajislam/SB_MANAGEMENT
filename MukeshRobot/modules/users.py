@@ -61,10 +61,10 @@ async def broadcast_handler(bot: Client, m: Message):
     all_chats = user_db.get_all_chats() or []
     await bot.send_message(
         OWNER_ID,
-        f"❍ {m.from_user.mention} ᴏʀ {m.from_user.id} ɪꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙʀᴏᴀᴅᴄᴀꜱᴛ......",
+        f"✦ {m.from_user.mention} ɪꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙʀᴏᴀᴅᴄᴀꜱᴛ......",
     )
     broadcast_msg = m.reply_to_message
-    sts_msg = await m.reply_text(f"❍ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ..")
+    sts_msg = await m.reply_text(f"💌")
     done = 0
     failed = 0
     success = 0
@@ -83,11 +83,11 @@ async def broadcast_handler(bot: Client, m: Message):
         done += 1
         if not done % 20:
             await sts_msg.edit(
-                f"❍ ʙʀᴏᴀᴅᴄᴀꜱᴛ ɪɴ ᴘʀᴏɢʀᴇꜱꜱ ➛ \n\n❍ ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ ➛  {total_chats} \n\n❍ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➛ {done} / {total_chats}\n\n❍ sᴜᴄᴄᴇꜱꜱ ➛ {success}\n\n❍ ғᴀɪʟᴇᴅ ➛ {failed}"
+                f"✦ ʙʀᴏᴀᴅᴄᴀꜱᴛ ɪɴ ᴘʀᴏɢʀᴇꜱꜱ ⏤͟͟͞͞★ \n\n❅ ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ ➠  {total_chats}\n❅ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➠ {done} / {total_chats}\n❅ sᴜᴄᴄᴇꜱꜱ ➠ {success}\n❅ ғᴀɪʟᴇᴅ ➠ {failed}\n\n✦ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ʙʏ ➠ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐"
             )
     completed_in = datetime.timedelta(seconds=int(time.time() - start_time))
     await sts_msg.edit(
-        f"❍ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ɪɴ ➛ {completed_in}.\n\n❍ ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ ➛ {total_chats}\n\n❍ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➛ {done} / {total_chats}\n\n❍ sᴜᴄᴄᴇꜱꜱ ➛ {success}\n\n❍ ғᴀɪʟᴇᴅ ➛ {failed}"
+        f"✦ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ɪɴ ⏤͟͟͞͞★ {completed_in}.\n\n❅ ᴛᴏᴛᴀʟ ᴄʜᴀᴛꜱ ➠ {total_chats}\n❅ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➠ {done} / {total_chats}\n❅ sᴜᴄᴄᴇꜱꜱ ➠ {success}\n❅ ғᴀɪʟᴇᴅ ➠ {failed}\n\n✦ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ʙʏ ➠ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐"
     )
 
 
@@ -118,10 +118,10 @@ async def broadcast_handler(bot: Client, m: Message):
     all_users = get_all_users()
     await bot.send_message(
         OWNER_ID,
-        f"❍ {m.from_user.mention} ᴏʀ {m.from_user.id} ɪꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙʀᴏᴀᴅᴄᴀꜱᴛ......",
+        f"✦ {m.from_user.mention} ɪꜱ ꜱᴛᴀʀᴛᴇᴅ ᴛʜᴇ ʙʀᴏᴀᴅᴄᴀꜱᴛ......",
     )
     broadcast_msg = m.reply_to_message
-    sts_msg = await m.reply_text(f"❍ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ..")
+    sts_msg = await m.reply_text(f"💣")
     done = 0
     failed = 0
     success = 0
@@ -138,11 +138,11 @@ async def broadcast_handler(bot: Client, m: Message):
         done += 1
         if not done % 20:
             await sts_msg.edit(
-                f"❍ ʙʀᴏᴀᴅᴄᴀꜱᴛ ɪɴ ᴘʀᴏɢʀᴇꜱꜱ ➛ \n\n❍ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ ➛ {total_users} \n\n❍ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➛ {done} / {total_users}\n\n❍ sᴜᴄᴄᴇꜱꜱ ➛ {success}\n\n❍ ғᴀɪʟᴇᴅ ➛ {failed}"
+                f"✦ ʙʀᴏᴀᴅᴄᴀꜱᴛ ɪɴ ᴘʀᴏɢʀᴇꜱꜱ ⏤͟͟͞͞★\n\n❅ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ ➠ {total_users}\n❅ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➠ {done} / {total_users}\n❅ sᴜᴄᴄᴇꜱꜱ ➠ {success}\n❅ ғᴀɪʟᴇᴅ ➠ {failed}\n\n✦ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ʙʏ ➠ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐"
             )
     completed_in = datetime.timedelta(seconds=int(time.time() - start_time))
     await sts_msg.edit(
-        f"❍ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴄᴏᴍᴩʟᴇᴛᴇᴅ  \n\n❍ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ɪɴ ➛ {completed_in}.\n\n❍ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ ➛ {total_users}\n\n❍ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➛ {done} / {total_users}\n\n❍ sᴜᴄᴄᴇꜱꜱ ➛ {success}\n\n❍ ғᴀɪʟᴇᴅ ➛ {failed}"
+        f"✦ ʙʀᴏᴀᴅᴄᴀꜱᴛ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ⏤͟͟͞͞★\n\n❅ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ɪɴ ➠ {completed_in}\n❅ ᴛᴏᴛᴀʟ ᴜꜱᴇʀꜱ ➠ {total_users}\n❅ ᴄᴏᴍᴩʟᴇᴛᴇᴅ ➠ {done} / {total_users}\n❅ sᴜᴄᴄᴇꜱꜱ ➠ {success}\n❅ ғᴀɪʟᴇᴅ ➠ {failed}\n\n✦ ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ ʙʏ ➠ ๛ᴀ ᴠ ɪ s ʜ ᴀ ࿐"
     )
 
 
@@ -154,16 +154,16 @@ async def send_msg(user_id, message):
         await asyncio.sleep(e.value)
         return send_msg(user_id, message)
     except InputUserDeactivated:
-        logger.info(f"❍ {user_id} ➛ ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+        logger.info(f"❅ {user_id} ➥ ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇᴅ")
         return 400
     except UserIsBlocked:
-        logger.info(f"❍ {user_id} ➛ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ")
+        logger.info(f"❅ {user_id} ➥ ʙʟᴏᴄᴋᴇᴅ ᴛʜᴇ ʙᴏᴛ")
         return 400
     except PeerIdInvalid:
-        logger.info(f"❍ {user_id} ➛ ᴜꜱᴇʀ ɪᴅ ɪɴᴠᴀʟɪᴅ")
+        logger.info(f"❅ {user_id} ➥ ᴜꜱᴇʀ ɪᴅ ɪɴᴠᴀʟɪᴅ")
         return 400
     except Exception as e:
-        logger.error(f"❍ {user_id} ➛ {e}")
+        logger.error(f"❅ {user_id} ➥ {e}")
         return 500
 
 
@@ -260,7 +260,9 @@ __mod_name__ = "ɢ-ᴄᴀsᴛ"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), CHATLIST_HANDLER]
 
 __help__ = """
+ ❍ *ʙʀᴏᴀᴅᴄᴀsᴛ ➛ (ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)*
 
- ❍ /buser *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs
- ❍ /bchat *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs
+ ❍ /buser *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs.
+ ❍ /bchat *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs.
  """
+        
