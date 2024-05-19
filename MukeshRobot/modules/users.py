@@ -260,13 +260,7 @@ __mod_name__ = "ɢ-ᴄᴀsᴛ"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), CHATLIST_HANDLER]
 
 __help__ = """
- ❍ *ʙʀᴏᴀᴅᴄᴀsᴛ ➛ (ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ)*
 
- ❍ *ɴᴏᴛᴇ ➛* ᴛʜɪs sᴜᴘᴘᴏʀᴛs ʙᴀsɪᴄ ᴍᴀʀᴋᴅᴏᴡɴ
-
- ❍ /broadcastall *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴇᴠᴇʀʏᴡʜᴇʀᴇ
- 
- ❍ /broadcastusers *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs
- 
- ❍ /broadcastgroups *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs
+ ❍ /buser *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ᴜsᴇʀs
+ ❍ /bchat *➛* ʙʀᴏᴀᴅᴄᴀsᴛs ᴛᴏᴏ ᴀʟʟ ɢʀᴏᴜᴘs
  """
