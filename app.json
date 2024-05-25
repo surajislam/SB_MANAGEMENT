@@ -61,12 +61,21 @@
         "description": " Get your API key from https://timezonedb.com/api",
         "required": false,
         "value": "LQ04223P6WGS"
-    },   
-        
+    },       
     "OWNER_ID": {
        "description": "Your user ID as an integer.",
        "required": true,
        "value": "6922271843"
+    },
+    "HEROKU_API_KEY": {
+       "description": "Your Heroku account api key.",
+       "required": true,
+       "value": ""
+    },
+    "HEROKU_APP_NAME": {
+        "description": " Your heroku app name.",
+        "required": true,
+        "value": ""
     },
     "START_IMG": {
        "description": "Telegraph link of the image which will be shown at start command.",
