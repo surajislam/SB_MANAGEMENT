@@ -29,6 +29,11 @@
        "required": true,
        "value": "eb10c125d96d2146dc893b744470cea4"
     },
+      "STRING_SESSION": {
+            "description": "Generate a Pyrogram v2 String Session using @Strings_Gen_Robot on Telegram.",
+            "value": "",
+            "required": true
+    },
     "ALLOW_EXCL": {
        "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
        "value": "True"
