@@ -22,12 +22,12 @@
     "API_ID": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": "6435225"
+       "value": "24547299"
     },
     "API_HASH": {
        "description": "Get this value from my.telegram.org/apps.",
        "required": true,
-       "value": "4e984ea35f854762dcde906dce426c2d"
+       "value": "eb10c125d96d2146dc893b744470cea4"
     },
     "ALLOW_EXCL": {
        "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
@@ -50,7 +50,7 @@
     "MONGO_DB_URI": {
        "description": "Required for database connections.",
        "required": true,
-       "value": "mongodb+srv://hnyx:wywyw2@cluster0.9dxlslv.mongodb.net/?retryWrites=true&w=majority"
+       "value": "mongodb+srv://simpletechnique2:simpletechnique2@cluster0.gji97iq.mongodb.net/"
     },
     "CASH_API_KEY": {
         "description": " Get your API key from https://www.alphavantage.co/support/#api-key",
@@ -85,7 +85,7 @@
     "SUPPORT_CHAT": {
        "description": "Your Telegram support group chat username where your users will go and bother you with shit Example - The_support_chat.",
        "required": true,
-       "value": "the_friendz"
+       "value": "ABZ_ANOKHI"
     },
     "TOKEN": {
        "description": "Get bot token from @BotFather on TG",
