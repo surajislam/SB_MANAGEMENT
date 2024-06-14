@@ -95,7 +95,7 @@
         "STRING_SESSION": {
             "description": "Generate a Pyrogram v2 String Session using @Strings_Gen_Robot on Telegram.",
             "value": "",
-            "required": true
+            "required": true,
     }
- }
+  }
 }
